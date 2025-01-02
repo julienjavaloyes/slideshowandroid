@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="13dp"
+        android:text="Start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Stop"
+        app:layout_constraintLeft_toRightOf="@+id/buttonstart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Init"
+        app:layout_constraintLeft_toRightOf="@+id/buttonstop"
+ />
+    <TextView
+        android:id="@+id/textviewinterval"
+        android:text="Interval"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/buttonstop"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        />
+    <EditText
+        android:id="@+id/edittextinterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:minWidth="50dp"
+        android:textColor="@color/white"
+        android:text="7"
+        app:layout_constraintLeft_toRightOf="@+id/textviewinterval"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+    <TextView
+        android:id="@+id/textviewfolder"
+        android:text="Folder"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/edittextinterval"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        />
+    <EditText
+        android:id="@+id/edittextfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:minWidth="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/textviewfolder"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Next"
+        app:layout_constraintLeft_toRightOf="@+id/edittextfolder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:minWidth="400dp"
+        android:minHeight="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonstart"
+        android:scaleType="centerInside"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
